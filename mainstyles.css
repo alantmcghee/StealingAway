@@ -1,0 +1,267 @@
+
+
+
+
+
+body {
+    /** background-image: url('/Users/Yemaya/Documents/Project1/resources/images/Cantinoplanisphere1502.png'); --> */
+    background-size: 900px 400px;
+    opacity:1.0;
+    background-color: #d8dee6;
+}
+
+
+
+/*Text */
+
+
+@font-face {
+  font-family: Fanwood;
+  src:
+    url('resources/fonts/fanwood-master/webfonts/fanwood_text-webfont.woff'),
+    url('resources/fonts/fanwood-master/webfonts/fanwood_text-webfont.ttf');
+}
+
+
+p {
+font-family: Fanwood, Helvetica, sans-serif;
+font-size: 1.1em;
+line-height: 1.3em;
+padding-bottom: .4em;
+}
+
+#pictures { 
+outline-color: black;
+    outline-width: medium
+outline-style: dotted
+}
+
+
+figure {
+padding-top: 1em;
+padding-right: 1em;
+padding-bottom: 1em;
+padding-left: 1em;
+}
+
+img:hover {
+ opacity:1;
+}
+/* If you don't want this to apply to every image be sure to specify a class for the ones you don't want to disappear or vice versa */ 
+
+
+figure:hover .timelapse {
+opacity:1;
+}
+
+.timelapsecontainer {
+width:700px;
+position: relative;
+}
+
+.zongshape {
+
+
+}
+.timelapse {
+opacity:0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+figcaption { 
+font-family: Fanwood, Helvetica, sans-serif;
+font-size: 1.1em;
+line-height: 1.3em;
+color: white;
+background-color: black;
+
+}
+footer { 
+font-family: Fanwood, Helvetica, sans-serif;
+font-size: 1.1em;
+line-height: 1.3em;
+color: black;
+}
+#footerspacing {
+padding: 1em;
+}
+
+
+
+h1{
+        font-family: Fanwood, Helvetica;
+        text-align: centeractive
+        font-size: 4.0em;
+
+}
+h2 {
+font-family: Fanwood, Helvetica, sans-serif;
+text-decoration: underline;
+font-size: 1.5em;
+}
+
+a:link,  a:visited {
+    color: black;
+    text-decoration: none;
+    background-color: #fcfaf2;
+}
+
+
+a:hover {
+    color:  #d8dee6;
+}
+
+
+
+a:active {
+    background-color: black;
+}
+
+
+/*Layout*/
+
+img.portrait {
+
+/*float: left; */ 
+margin-right: 1em;
+margin-bottom: 1em;
+}
+
+#runawayimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/*bannerimage*/ 
+.container  {
+position: relative;
+width: 100%
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.saltwatercover {
+float: right;
+width: auto; 
+position: relative;
+padding: 0;
+z-index: 10; 
+}
+
+
+button {
+margin-right: 50%;
+margin-left: 50%;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .9s ease;
+  background-color: #d8dee6;
+}
+
+
+
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+
+
+
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+#footerimg{
+background-color: #d8dee6;
+}
+/*this is a class which is .[insertwordhere] */
+/* Morrison can  use a  id because its a unique feature */ 
+
+figure.morrisoncontainer {
+float:left;
+}
+
+
+
+img.frontpagebanner {
+height: 50;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+.frontpagebannertext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+figure.zongimage {
+/** display: block; **/
+position: center;
+/**border: .2em auto black; **/
+margin-left: 9em;
+margin-right: .5em;
+height: auto;
+float: center;
+}
+
+
+
+#bottomimage {
+float:center;
+}
+
+
+.container {
+padding: 1em;
+width: 90%;
+float: center;
+margin-right: 1em;
+margin-bottom: 1em;
+}
+
+img.bookcover {
+width: auto;
+float: right;
+margin-right: 1em;
+margin-bottom: 1em;
+padding-left: .1em;
+}
+
